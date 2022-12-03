@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    
+}
+.nav_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 8px ;
+}
+.logo img{
+  height: 65px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  border-radius: 40%;
+  cursor: pointer;
+   
+}
+.logo h1{
+    font-size: 1.2rem;
+    font-weight: 600; 
+    color: var(--primary-color);
+    
+    
+}
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    margin-bottom: 0;
+  
+}
+.nav_item a {
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav_icons{
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+.nav_icons span i {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.cart_icon, .fav_icon {
+    position: relative;
+}
+
+  .badge{
+    position: absolute;
+    top: 22%;
+    width: 15px;
+    height: 13px;
+    right: -15%;
+    content: "";
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.5rem;
+    font-weight: 600;
+    z-index: 10;
+    
+}
+.nav_icons .profile img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav_icons .profile{
+    position: relative;
+    z-index: 9;
+
+}
+.nav_icons .profile .profile_actions{
+    position:absolute;
+    
+}
+.show_profileActions {
+    display: block;
+}
+
+
+.mobile_menu {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    display: none;
+ 
+}
+.nav_active{
+    font-weight: 600 !important;
+}
